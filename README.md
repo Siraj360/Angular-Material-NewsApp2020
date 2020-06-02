@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
+## About NewsApp2020
+
+NewsApp2020 : A news app developed with Angular 9+, Material 9+,  3rd party news API service with theme switch of all 4 material theme 
+
+## Running Demoa at stackblitz
+
+https://angular-news-application.stackblitz.io/
+
 ## Key Features and Technologies
 
 - Angular 9.1.9
