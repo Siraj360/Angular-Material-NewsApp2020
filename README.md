@@ -1,27 +1,28 @@
-# NgNews
+# NNews App 2020
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
-## Development server
+## Key Features and Technologies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Angular 9.1.9
+- Material 9.2.4 and Boostrape 4.4 combine
+- Angular CLI 9+
+- TypeScripts 3.7
+- Bootstrap 4.4
+- Font Awesome Icons 3.7
+- Obserable RxJs 6.5 Service with mapping
+- ngx-bootstrap 5.3
+- Globale State Managment
+- Lazy Loading Modules
+- jQuery 3.4
+- Material Style Switch;
+- Section SASS classes with color varibles
+- Data filter and Data Order Pipes;
 
-## Code scaffolding
+## Application Screenshot
+  
+![alt tag](https://github.com/Siraj360/ETMS-Blazor/blob/master/Angular-Material-NewsApp2020/wwwroot/newapp1.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![alt tag](https://github.com/Siraj360/ETMS-Blazor/blob/master/Angular-Material-NewsApp2020/wwwroot/newapp2.png)
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+![alt tag](https://github.com/Siraj360/ETMS-Blazor/blob/master/Angular-Material-NewsApp2020/wwwroot/newapp3.png)
