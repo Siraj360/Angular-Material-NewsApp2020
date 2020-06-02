@@ -1,4 +1,4 @@
-# NNews App 2020
+# News App 2020
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
 
@@ -21,8 +21,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Application Screenshot
   
-![alt tag](https://github.com/Siraj360/ETMS-Blazor/blob/master/Angular-Material-NewsApp2020/wwwroot/newapp1.png)
+![alt tag](https://github.com/Siraj360/Angular-Material-NewsApp2020/blob/master/newapp1.png)
 
-![alt tag](https://github.com/Siraj360/ETMS-Blazor/blob/master/Angular-Material-NewsApp2020/wwwroot/newapp2.png)
+![alt tag](https://github.com/Siraj360/Angular-Material-NewsApp2020/blob/master/newapp2.png)
 
-![alt tag](https://github.com/Siraj360/ETMS-Blazor/blob/master/Angular-Material-NewsApp2020/wwwroot/newapp3.png)
+![alt tag](https://github.com/Siraj360/Angular-Material-NewsApp2020/blob/master/newapp3.png)
