@@ -1,0 +1,192 @@
+<!-- <pre>
+  mArticles:
+ {{mArticles|json}}
+  mSources:
+ {{mSources|json}}
+</pre>  -->
+<div class="div-outer" *ngIf="mArticles == null || mArticles.length <= 0">
+	<loader></loader>
+</div>
+
+<div class="div-outer">
+
+	<div class="col-md-12">
+		<mat-toolbar color="primary">
+<!-- --Filter menu -- -->
+			<button mat-button (click)="sidenav.toggle()" *ngIf="isShowSidebar">
+        <mat-icon>menu</mat-icon>
+      </button>
+			<span>Top Headlines</span>
+			<span class="example-spacer"></span>
+          Filter By:&nbsp;&nbsp;
+          <mat-form-field class="filter-full-width">
+             <input matInput  [(ngModel)]="filtterText" >
+          </mat-form-field>
+               <!-- &nbsp;&nbsp;
+             <h4><span class="badge badge-pill  badge-warning">
+                 {{mArticles.length}}</span></h4> -->
+             &nbsp;&nbsp;
+          <h4 *ngIf="favoriteCount<=0"><span class="badge  badge-pill badge-warning">
+         No favorites</span></h4>
+        <h4 *ngIf="favoriteCount>0"><span class="badge badge-light">
+        Favorites: {{favoriteCount}}</span></h4>
+        &nbsp;
+	     <button mat-button *ngIf="favoriteCount>0">
+          <mat-icon (click)="filterClick()" class="example-icon" aria-hidden="false" >
+           {{isFavoriteFilter ? 'flag': 'favorite'}}
+          </mat-icon>
+      </button>
+			<button mat-button [matMenuTriggerFor]="appMenu">
+        <mat-icon>settings</mat-icon>
+      </button>
+
+		</mat-toolbar>
+<!-- --Selection tool menu -- -->
+		<mat-menu #appMenu="matMenu">
+      <button mat-menu-item (click)="isShowCategary=!isShowCategary">
+         <mat-icon *ngIf="isShowCategary">done</mat-icon>
+         <mat-icon *ngIf="!isShowCategary"></mat-icon>
+         <span>Categary</span>
+         <!-- <span *ngIf="!isShowCategary">Show Categary</span>
+         <span *ngIf="isShowCategary">Hide Categary</span> -->
+      </button>
+       <button mat-menu-item (click)="changePagnator()">
+         <mat-icon *ngIf="isShowPagnator">done</mat-icon>
+         <mat-icon *ngIf="!isShowPagnator"></mat-icon>
+         <span>Pagnator</span>
+         <!-- <span *ngIf="!isShowPagnator">Show Pagnator</span>
+         <span *ngIf="isShowPagnator">Hide Pagnator</span> -->
+      </button>
+			<button mat-menu-item (click)="isShowSidebar=!isShowSidebar">
+          <mat-icon *ngIf="isShowSidebar">done</mat-icon>
+          <mat-icon *ngIf="!isShowSidebar"></mat-icon>
+          <span>Sidebar Menu</span>
+      </button>
+			<button mat-menu-item (click)="isShowSidebar=!isShowSidebar">
+         <mat-icon *ngIf="!isShowSidebar">done</mat-icon>
+         <mat-icon *ngIf="isShowSidebar"></mat-icon>
+         <span>DropDown Menu</span>
+      </button>
+
+		</mat-menu>
+
+
+		<div class="mat-app-background basic-container div-selection" *ngIf="!isShowSidebar">
+			<mat-label color="warn" class="title">Select a Source(s):</mat-label>
+			<mat-select placeholder="No selection!" [formControl]="source" multiple>
+				<mat-option *ngFor="let source of mSources" (click)="searchArticles(source.id);sidenav.close();">
+					<!-- <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ source.id +'.png)'}" class="example-header-image"></div> -->
+					<span class="source-name"> {{source.name}}</span>
+				</mat-option>
+			</mat-select>
+		</div>
+
+		<mat-drawer-container class="example-container">
+
+<!-- mat-drawer start -->
+			<mat-drawer #sidenav class="example-sidenav">
+				<mat-list class="list-nav">
+					<mat-list-item class="list-item" *ngFor="let source of mSources"
+						(click)="searchArticles(source.id);sidenav.close();">
+
+						<!-- <div mat-card-avatar [ngStyle]="{'background-image': 'url(../assets/images/'+ source.id +'.png)'}" class="example-header-image"></div> -->
+
+						<span class="source-name"> {{source.name}}</span>
+
+					</mat-list-item>
+				</mat-list>
+			</mat-drawer>
+	<!-- mat-drawer end -->
+
+  <!-- paginator -->
+
+<!-- "[3, 6, 9, 12] "[4, 8, 12]"  " -->
+  <mat-paginator *ngIf="!isFavoriteFilter && isShowPagnator"
+    [length]="allArticles.length"
+    [pageSize]="pageSize"
+    [pageSizeOptions]= "[4, 8, 12, 24]"
+    (page)="pageChange($event)">
+  </mat-paginator>
+
+	<!-- Catgary -->
+<div class="row" *ngIf="isShowCategary">
+  <div class= "col-md-12 text-center news-categary" >
+  <span *ngFor="let categary of categories" class=" badge badge-pill badge-warning">{{categary}}</span>
+</div>
+
+</div>
+			<!-- card start  -->
+			<div class="row p-3">
+				<div class="col-sm-6 col-md-4 col-xl-3"
+        *ngFor="let article of ( mArticles | filter:{title:filtterText} ); let ix=index">
+					<mat-card
+           [ngClass]="{'favorite-card badger-left badger-danger' : article.isFavorite}"
+            class="example-card shadow-effect" data-badger="&#10084; Favorite"
+          >
+						<mat-card-header>
+							<!-- <div mat-card-avatar
+								[ngStyle]="{'background-image': 'url(../assets/images/'+ article.source.id +'.png)'}"
+								class="example-header-image"></div> -->
+							<mat-card-title class="title">
+                <!-- {{ix}}  -->
+                {{article.title}}</mat-card-title>
+							<mat-card-subtitle>Source: {{article.source.name}}</mat-card-subtitle>
+						</mat-card-header>
+						<img mat-card-image class="img-article" src={{article.urlToImage}} alt="">
+						<mat-card-content>
+							<div class="div-description">
+								{{article.description}}
+							</div>
+							<p>
+							Published at:	<span class="badge badge-pill badge-primary">{{article.publishedAt | date:'medium' }}</span>
+							</p>
+              <div class="div-comments" *ngIf="article.comments.length>0">
+                Comments:
+               <div *ngFor="let comment of article.comments, let ix=index">
+                <span class="badge badge-warning">{{ix+1}}</span>&nbsp;&nbsp;
+                {{comment}}
+               </div>
+              </div>
+
+
+						</mat-card-content>
+						<mat-card-actions class="action-buttons">
+							<button mat-button color="warn" (click)="article.like =article.like+1;">
+                <mat-icon>thumb_up_alt</mat-icon>
+                &nbsp;<span class="badge badge-success">{{article.like}}</span>
+              </button>
+							<button mat-button color="warn" (click)="article.dislike = article.dislike+1;">
+                <mat-icon>thumb_down_alt</mat-icon>
+                &nbsp;<span class="badge badge-warning">{{article.dislike}}</span>
+              </button>
+
+							<button mat-button color="warn" (click) = "openDialog(article)">
+                <mat-icon>comment</mat-icon>
+                Comments
+              </button>
+              <span class="badge badge-light"  *ngIf="article.comments.length>0">{{article.comments.length}}  </span>
+							<button mat-button class="color-warn" (click)="article.isFavorite=!article.isFavorite;favoriteUpdate() ">
+                <span *ngIf="!article.isFavorite" class="icon-fix">
+                     <i  class="fa fa-star-o" aria-hidden="true"></i>
+                 </span>
+                <mat-icon *ngIf="article.isFavorite" >favorite</mat-icon>
+                <!-- <i *ngIf="article.isFavorite" class="fa fa-heart" aria-hidden="true"></i> -->
+
+                &nbsp;Favorite
+              </button>
+							<!-- <button mat-button color="warn">
+                <mat-icon>share</mat-icon> Share
+              </button> -->
+							<a mat-button color="warn" href={{article.url}} target="_blank">
+								<mat-icon>visibility</mat-icon> View
+							</a>
+						</mat-card-actions>
+					</mat-card>
+				</div>
+			</div>
+			<!-- card end -->
+		</mat-drawer-container>
+
+	</div>
+
+</div>

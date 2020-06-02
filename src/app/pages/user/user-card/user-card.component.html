@@ -1,0 +1,89 @@
+<div ng-if="user" class="pb-1">
+
+  <div class="row my-5 pt-2"  [ngClass]="{'user-even': iseven, 'user-odd': !iseven}">
+
+      <div class="row p-t-1 d-md-none d-sm-block">
+          <div class="col-md-5 col-lg-4">
+
+          </div>
+
+          <div class="col-md-7 col-lg-8 text-center">
+            <h5 [ngClass]="{'section-colored-title': iseven}">
+               {{user.name.title| titlecase}} {{user.name.first| titlecase}} {{user.name.last | titlecase}}
+                 </h5>
+
+          </div>
+        </div>
+
+<div class="col-md-5 col-lg-4 text-center">
+
+<img class="user-picture mx-auto" src="{{user.picture.large}}" alt="Card image">
+
+<h4>{{user.login.username | titlecase}}</h4>
+<div class="text-xs-center pt-3">
+  <span> {{user.location.street.number}} {{user.location.street.name}}</span></div>
+<div class="text-xs-center">
+  <span> {{user.location.city| titlecase}}, {{user.location.state| titlecase}} {{user.location.postcode}}</span>
+</div>
+
+
+
+   <div class="row pa-5 d-md-none d-sm-block"></div>
+
+<div class="text-center py-2">
+  <ul class="social-network social-circle">
+    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+    <li><a href="#" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+
+  </ul>
+</div>
+
+</div>
+<div class="col-md-7 col-lg-8 profile" style="margin-top: -50px">
+
+<div class="crl-profile-no">
+  {{profile}}
+</div>
+
+<div class="text-xs-center d-md-block d-sm-none py-1">
+  <h2>
+    {{capitalize(user.name.title)}} {{capitalize(user.name.first)}} {{capitalize(user.name.last)}}
+  </h2>
+   </div>
+<table class="table no-border table-sm">
+
+  <tbody>
+    <tr>
+      <th class="no-border" scope="row">Id:</th>
+      <td class="no-border"> {{user.name.first.charAt(0).toUpperCase()}}{{ user.name.last.charAt(0).toUpperCase()}}{{user.id.value}}</td>
+    </tr>
+    <tr>
+      <th class="no-border" scope="row"> Registered:
+      </th>
+      <td class="no-border">{{user.registered.date | date : 'longDate'}}</td>
+    </tr>
+    <tr>
+      <th class="no-border" scope="row"> Birth Date:
+      </th>
+      <td class="no-border">{{user.dob.date | date : 'longDate'}}</td>
+    </tr>
+    <tr>
+      <th class="no-border" scope="row">Phone:</th>
+      <td class="no-border">{{user.phone}}</td>
+    </tr>
+    <tr>
+      <th class="no-border" scope="row">Cell:</th>
+      <td class="no-border"> {{user.cell}}</td>
+    </tr>
+    <tr>
+      <th class="no-border" scope="row">Email:</th>
+      <td class="no-border">{{user.email}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>

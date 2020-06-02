@@ -1,0 +1,25 @@
+.spacer {
+  flex: 1 1 auto;
+}
+.span-title
+{
+  padding-left: 25px !important;
+  color: #f44336 !important;
+}
+
+#desktop, #desktopTitle {
+  display: none;
+}
+
+@media screen and (min-width: 700px) {
+  #mobile, .mobileMenu, {
+    display: none !important;
+  }
+  .mobileMenu
+  {
+    left: -400px !important;
+  }
+  #desktop, #desktopTitle {
+    display: block;
+  }
+}

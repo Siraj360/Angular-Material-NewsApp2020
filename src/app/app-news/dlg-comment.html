@@ -1,0 +1,11 @@
+<h3 class="color-warn" mat-dialog-title>Hi {{data.title}}</h3>
+<div mat-dialog-content>
+	Enter your comments:
+	<mat-form-field class="filter-full-width">
+			<textarea matInput rows="5" [(ngModel)]="data.comment"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+	<button mat-button color="warn" [mat-dialog-close]="data.comment" cdkFocusInitial>Add Comment</button>
+	<button mat-button (click)="onNoClick()">Cancel</button>
+</div>

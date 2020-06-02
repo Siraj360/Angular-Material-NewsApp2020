@@ -1,0 +1,59 @@
+
+<mat-toolbar>
+	<mat-toolbar-row>
+    <span>NewsApp2020:</span>
+      <span id="desktopTitle" class="span-title">{{title}}</span>
+    <span class="spacer"></span>
+    
+    <div id="desktop" >
+    <button mat-mini-fab color="accent"
+       routerLink = "/home">
+      <mat-icon>home</mat-icon>
+    </button>
+    &nbsp;&nbsp;
+    <button
+    mat-raised-button color="accent"
+    routerLink = "/users">
+    <mat-icon>people</mat-icon>
+    <span>Users</span>
+    </button>
+    &nbsp;&nbsp;
+    <button
+    mat-raised-button color="accent"
+    routerLink = "/about">
+    <mat-icon>thumb_up</mat-icon>
+    <span>About</span>
+    </button>
+    &nbsp;&nbsp;
+    </div>
+    <button mat-raised-button color="accent" id="mobile" [matMenuTriggerFor]="appMenu">
+        <mat-icon >settings</mat-icon>
+    </button>
+      &nbsp;&nbsp;
+    <theme-switch></theme-switch>
+	</mat-toolbar-row>
+</mat-toolbar>
+
+   <mat-menu class="mobileMenu" #appMenu="matMenu">
+      &nbsp;&nbsp;
+        <button mat-mini-fab
+         color="accent"
+        routerLink = "/home">
+        <mat-icon>home</mat-icon>
+    </button>
+      &nbsp;&nbsp;
+      <button  mat-raised-button
+      color="accent"
+      routerLink = "/users">
+      <mat-icon>people</mat-icon>
+      <span fxFlex>Users</span>
+      </button>
+      &nbsp;&nbsp;
+      <button mat-raised-button
+        color="accent"
+      routerLink = "/about">
+      <mat-icon>thumb_up</mat-icon>
+      <span>About</span>
+      </button>
+       &nbsp;&nbsp;
+    </mat-menu>

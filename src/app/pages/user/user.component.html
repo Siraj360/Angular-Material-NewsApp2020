@@ -1,0 +1,59 @@
+<br>
+<div class="container">
+  <h1>Users Pofiles</h1>
+
+  <div class="row">
+    <div class="col-sm-12 col-lg-12">
+      <div class="container my-1">
+        <div *ngIf="pageUsers.length <= 0">
+            <ul class="loader">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+    
+        </div>
+
+        <div class="row user-even pt-3" *ngIf="pageUsers.length > 0">
+          <div class="col-md-8 col-sm-12 text-xs-center text-md-left ">
+             <pagination class="pagination-warning" previousText="&lsaquo;" nextText="&rsaquo;" [maxSize]="5"
+              [rotate]="true" [directionLinks]="true" [boundaryLinks]="true" [rotate]="true" [totalItems]="totalItems"
+              [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)" (numPages)="smallnumPages = $event">
+            </pagination>
+          </div>
+
+          <div class="col-md-4 pa-4 text-xs-center text-md-right page-text">
+            {{pageText}}
+          </div>
+        </div>
+
+        <div *ngIf="pageUsers.length > 0" class="pt-5">
+          <div *ngFor="let user of pageUsers;let ex=even; let ix =index">
+            <user-card [user]="user" [profile]="(currentPage-1)*itemsPerPage + ix + 1 " [iseven]="ex"></user-card>
+          </div>
+        </div>
+
+        <div class="row user-even pt-3" *ngIf="pageUsers.length > 0">
+
+          <div class="col-md-8 col-sm-12 text-xs-center text-md-left ">
+            <pagination class="pagination-warning" previousText="&lsaquo;" nextText="&rsaquo;" [maxSize]="5"
+              [rotate]="true" [directionLinks]="true" [boundaryLinks]="true" [rotate]="true" [totalItems]="totalItems"
+              [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)" (numPages)="smallnumPages = $event">
+            </pagination>
+          </div>
+
+          <div class="col-md-4 pa-4 text-xs-center text-md-right page-text">
+            {{pageText}}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<br> <br>

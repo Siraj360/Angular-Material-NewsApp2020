@@ -1,0 +1,137 @@
+
+{
+  "status": "ok",
+  "totalResults": 10,
+  "articles": [
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Riana Pfefferkorn",
+      "title": "The FBI is mad because it keeps getting into locked iPhones without Apple’s help",
+      "description": "The debate over device encryption isn’t dead, it was merely resting. And it just won’t go away.",
+      "url": "https://techcrunch.com/2020/05/22/the-fbi-is-mad-because-it-keeps-getting-into-locked-iphones-without-apples-help/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/GettyImages-1168923033.jpg?w=600",
+      "publishedAt": "2020-05-22T21:33:05Z",
+      "content": "The debate over encryption continues to drag on without end.\r\nIn recent months, the discourse has largely swung away from encrypted smartphones to focus instead on end-to-end encrypted messaging. But… [+8531 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Darrell Etherington",
+      "title": "How to make the most of your at-home videoconference setup: Microphone edition",
+      "description": "Working from home isn’t going anywhere anytime soon, and a slew of companies just announced longer-term initiatives to make their remote work practices either extend or permanent. That means for some it’s the perfect time to take their at-home videoconferenci…",
+      "url": "https://techcrunch.com/2020/05/22/how-to-make-the-most-of-your-at-home-videoconference-setup-microphone-edition/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/mic-three-up-hero.jpg?w=600",
+      "publishedAt": "2020-05-22T20:03:26Z",
+      "content": "Working from home isn’t going anywhere anytime soon, and a slew of companies just announced longer-term initiatives to make their remote work practices either extend or permanent. That means for some… [+6950 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Kirsten Korosec",
+      "title": "Scale AI releases free lidar dataset to power self-driving car development",
+      "description": "High quality data is the fuel that powers AI algorithms. Without a continual flow of labeled data, bottlenecks can occur and the algorithm will slowly get worse and add risk to the system. It’s why labeled data is so critical for companies like Zoox, Cruise a…",
+      "url": "https://techcrunch.com/2020/05/22/scale-ai-releases-free-lidar-dataset-to-power-self-driving-car-development/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/LiDAR-comparison-credit_-Scale-AI.png?w=764",
+      "publishedAt": "2020-05-22T19:56:39Z",
+      "content": "High quality data is the fuel that powers AI algorithms. Without a continual flow of labeled data, bottlenecks can occur and the algorithm will slowly get worse and add risk to the system.\r\nIt’s why … [+3911 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Greg Kumparak",
+      "title": "Box will let employees work from home until at least 2021",
+      "description": "Another tech company is joining the list of those planning on going remote for the long haul: Box . Box CEO Aaron Levie announced this morning that the company will “remain a digital-first organization” moving forward. While it sounds like they’re still worki…",
+      "url": "https://techcrunch.com/2020/05/22/box-will-let-employees-work-from-home-until-at-least-2021/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/04/GettyImages-611385448.jpg?w=600",
+      "publishedAt": "2020-05-22T19:53:47Z",
+      "content": "Another tech company is joining the list of those planning on going remote for the long haul: Box .\r\nBox CEO Aaron Levie announced this morning that the company will “remain a digital-first organizat… [+1232 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Natasha Lomas",
+      "title": "First major GDPR decisions looming on Twitter and Facebook",
+      "description": "The lead data regulator for much of big tech in Europe is moving inexorably towards issuing its first major cross-border GDPR decision — saying today it’s submitted a draft decision related to Twitter’s business to its fellow EU watchdogs for review. “The dra…",
+      "url": "https://techcrunch.com/2020/05/22/first-major-gdpr-decisions-looming-on-twitter-and-facebook/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/03/GettyImages-1055352580.jpg?w=601",
+      "publishedAt": "2020-05-22T19:30:19Z",
+      "content": "The lead data regulator for much of big tech in Europe is moving inexorably towards issuing its first major cross-border GDPR decision — saying today it’s submitted a draft decision related to Twitte… [+8527 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Devin Coldewey",
+      "title": "Minecraft Dungeons has charm and potential, but needs lot more time in the furnace",
+      "description": "Minecraft is one of the popular games on the planet, so it’s natural that Microsoft, after buying creator Mojang some years back, would attempt to apply the genre’s playful, blocky aesthetic to other genres. After modest success with the Story Mode adventure …",
+      "url": "https://techcrunch.com/2020/05/22/minecraft-dungeons-has-charm-and-potential-but-needs-lot-more-time-in-the-furnace/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/minecraft-dungeons-3.jpg?w=686",
+      "publishedAt": "2020-05-22T19:28:48Z",
+      "content": "Minecraft is one of the popular games on the planet, so it’s natural that Microsoft, after buying creator Mojang some years back, would attempt to apply the genre’s playful, blocky aesthetic to other… [+8448 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Danny Crichton, Alex Wilhelm, Natasha Mascarenhas",
+      "title": "3 views on the life and death of college towns, remote work and the future of startup hubs",
+      "description": "The global pandemic has halted travel, shunted schools online and shut down many cities, but the future of college-town America is an area of deep concern for the startup world. College towns have done exceedingly well with the rise of the knowledge economy a…",
+      "url": "https://techcrunch.com/2020/05/22/3-views-on-the-life-and-death-of-college-towns-remote-work-and-the-future-of-startup-hubs/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/GettyImages-1216618760.jpg?w=712",
+      "publishedAt": "2020-05-22T19:00:03Z",
+      "content": "The global pandemic has halted travel, shunted schools online and shut down many cities, but the future of college-town America is an area of deep concern for the startup world.\r\nCollege towns have d… [+1996 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Darrell Etherington",
+      "title": "SpaceX's first crewed spacecraft launch is officially cleared to proceed on May 27",
+      "description": "SpaceX has received approval on its mission to launch NASA astronauts for the first time ever on May 27, having passed the final Flight Readiness Review (FRR) conduced by the agency to ensure everything is go for launch. This final check, conducted over the p…",
+      "url": "https://techcrunch.com/2020/05/22/spacexs-first-crewed-spacecraft-launch-is-officially-cleared-to-proceed-on-may-27/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/05/crew-demo-2-spacex.jpg?w=732",
+      "publishedAt": "2020-05-22T18:35:44Z",
+      "content": "SpaceX has received approval on its mission to launch NASA astronauts for the first time ever on May 27, having passed the final Flight Readiness Review (FRR) conduced by the agency to ensure everyth… [+2180 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Neesha A. Tambe",
+      "title": "Startup Battlefield is going virtual with TechCrunch Disrupt 2020",
+      "description": "You read that right. The big announcement came yesterday – TechCrunch Disrupt is now fully virtual. What does this mean for Startup Battlefield? More opportunity. The best companies from across the globe, an even bigger launch platform, the eyes of more inves…",
+      "url": "https://techcrunch.com/2020/05/22/startup-battlefield-is-going-virtual-with-techcrunch-disrupt-2020/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2015/08/9726191699_6ba4b89744_o.jpg?w=601",
+      "publishedAt": "2020-05-22T17:05:10Z",
+      "content": "You read that right. The big announcement came yesterday – TechCrunch Disrupt is now fully virtual. What does this mean for Startup Battlefield? More opportunity. The best companies from across the g… [+3913 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Brian Heater",
+      "title": "Netflix’s beloved animated series Tuca & Bertie is getting a second life on Adult Swim",
+      "description": "Tuca & Bertie was wonderful. It was a hilarious and heartfelt examination of adult relationships, coupled with whimsical animated visuals. And like most good things in this world, it was simple too beautiful to live. The Netflix series, which starred comedian…",
+      "url": "https://techcrunch.com/2020/05/22/netflixs-beloved-animated-series-tuca-bertie-is-getting-a-second-life-on-adult-swim/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2019/06/tuca-bertie.jpg?w=710",
+      "publishedAt": "2020-05-22T17:04:28Z",
+      "content": "Tuca &amp; Bertie was wonderful. It was a hilarious and heartfelt examination of adult relationships, coupled with whimsical animated visuals. And like most good things in this world, it was simple t… [+1012 chars]"
+    }
+  ]
+}
